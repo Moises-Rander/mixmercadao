@@ -10,6 +10,7 @@
 body {
     height: 100vh;
     background-image: url("/assets/background.png");
+    background-color: var(--black);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -42,14 +43,14 @@ body {
 #varejo__fase1__logo,
 #atacado__fase1__logo,
 #catalogo__fase1__logo {
-    width: 46vw;
+    height: 12rem;
 }
 
 #fase1__nome,
 #varejo__fase1__nome,
 #atacado__fase1__nome,
 #catalogo__fase1__nome {
-    width: 52.2vw;
+    height: 3.5rem;
 }
 
 #fase2,
@@ -61,11 +62,13 @@ body {
 
 #fase2__text {
     color: var(--white);
+    margin-bottom: 0.8rem;
 }
 
 .buttons {
     background-color: var(--white);
     width: 85vw;
+    max-width: 44rem;
     height: 4.46rem;
     align-items: center;
     gap: 2.4vw;
@@ -77,7 +80,7 @@ body {
 }
 
 .button__icons {
-    width: 12vw;
+    height: 3rem;
 }
 
 #catalogo__title,
@@ -110,4 +113,31 @@ body {
     background-color: var(--orange);
     padding: 0.25rem;
     border-radius: 0.25rem;
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-image: url("/assets/background__desktop.png");
+    }
+
+    #fase2__text {
+        align-self: flex-start;
+    }
+
+    .desktop__aux {
+        align-self: flex-start;
+        margin: auto 16vw;
+        align-items: flex-start;
+        font-size: 1.5rem;
+    }
+
+    #catalogo__title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    #catalogo__obs {
+        font-size: 1.2rem;
+    }
+
 }
