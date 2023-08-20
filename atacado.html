@@ -4,29 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mix Mercadão - atacado</title>
+    <title>Mix Mercadão - catálogos</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/resetcss.css">
 </head>
 
 <body class="column__flex">
-    <section id="atacado__fase1" class="column__flex">
+    <section id="catalogo__fase1" class="column__flex">
         <a href="index.html">
-            <img id="atacado__fase1__logo" src="assets/logo__mix.png" alt="Logo Mix Mercadão">
+            <img id="catalogo__fase1__logo" src="assets/logo__mix.png" alt="Logo Mix Mercadão">
         </a>
-        <img id="atacado__fase1__nome" src="assets/nome__mix.png" alt="Mix Mercadão">
+        <img id="catalogo__fase1__nome" src="assets/nome__mix.png" alt="Mix Mercadão">
     </section>
-    <section id="vendedores" class="column__flex">
-        <h2 id="vendedores__title">Nossos vendedores:</h2>
-        <a id="atacado__ananda"
-            href="https://api.whatsapp.com/send?phone=5598985272565&text=Ol%C3%A1,%20Ananda!%20Quero%20comprar%20em%20atacado"
-            class="buttons row__flex">
-            <p id="atacado__button__name">Converse com a Ananda Sanches</p>
-        </a>
-        <a href="https://api.whatsapp.com/send?phone=5598988513352&text=Ol%C3%A1,%20Pedro!%20Quero%20comprar%20em%20atacado"
-            class="buttons row__flex orange__button">
-            <p id="atacado__button__name">Converse com o Pedro Sanches</p>
-        </a>
+    <section id="catalogo__buttons" class="column__flex">
+        <h2 id="catalogo__title">Nossos catálogos:</h2>
+        <p id="catalogo__obs">Para saber os valores,<br> por favor consulte os nossos
+        <div id="catalogo__menu" class="column__flex">
+            <a id="obs__link" href="index.html"> vendedores</a>.</p>
+            <a href="pdf's/catalogo__bovino.pdf" class="buttons row__flex">
+                <p>Catálogo de carnes bovinas</p>
+            </a>
+            <a href="pdf's/catalogo__suino.pdf" class="buttons row__flex orange__button">
+                <p>Catálogo de carnes suínas</p>
+            </a>
+            <a href="pdf's/catalogo__aves.pdf" class="buttons row__flex">
+                <p>Catálogo de aves</p>
+            </a>
+            <a href="pdf's/catalogo__frios.pdf" class="buttons row__flex orange__button">
+                <p>Catálogo de frios e processados</p>
+            </a>
+            <a href="pdf's/catalogo__mercearia.pdf" class="buttons row__flex">
+                <p>Catálogo da mercearia</p>
+            </a>
+        </div>
     </section>
 </body>
 
