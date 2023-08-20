@@ -1,103 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@500;700&display=swap');
+<!DOCTYPE html>
+<html lang="pt-br">
 
-:root {
-    --white: #fff;
-    --black: #000;
-    --orange: #e6491c;
-    --green: #677627;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mix Mercadão - catálogos</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/resetcss.css">
+</head>
 
-body {
-    height: 100vh;
-    background-image: url("/assets/background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-}
+<body class="column__flex">
+    <section id="catalogo__fase1" class="column__flex">
+        <a href="index.html">
+            <img id="catalogo__fase1__logo" src="assets/logo__mix.png" alt="Logo Mix Mercadão">
+        </a>
+        <img id="catalogo__fase1__nome" src="assets/nome__mix.png" alt="Mix Mercadão">
+    </section>
+    <section id="catalogo__buttons" class="column__flex">
+        <h2 id="catalogo__title">Nossos catálogos:</h2>
+        <p id="catalogo__obs">Para saber os valores,<br> por favor consulte os nossos
+        <div id="catalogo__menu" class="column__flex">
+            <a id="obs__link" href="index.html"> vendedores</a>.</p>
+            <a href="pdf's/catalogo__bovino.pdf" class="buttons row__flex">
+                <p>Catálogo de carnes bovinas</p>
+            </a>
+            <a href="pdf's/catalogo__suino.pdf" class="buttons row__flex orange__button">
+                <p>Catálogo de carnes suínas</p>
+            </a>
+            <a href="pdf's/catalogo__aves.pdf" class="buttons row__flex">
+                <p>Catálogo de aves</p>
+            </a>
+            <a href="pdf's/catalogo__frios.pdf" class="buttons row__flex orange__button">
+                <p>Catálogo de frios e processados</p>
+            </a>
+            <a href="pdf's/catalogo__mercearia.pdf" class="buttons row__flex">
+                <p>Catálogo da mercearia</p>
+            </a>
+        </div>
+    </section>
+</body>
 
-.column__flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.row__flex {
-    display: flex;
-    flex-direction: row;
-}
-
-#fase1,
-#varejo__fase1,
-#atacado__fase1,
-#catalogo__fase1 {
-    margin-top: 2.5rem;
-    justify-content: space-between;
-    gap: 1rem;
-}
-
-#fase1__logo,
-#varejo__fase1__logo,
-#atacado__fase1__logo,
-#catalogo__fase1__logo {
-    width: 46vw;
-}
-
-#fase1__nome,
-#varejo__fase1__nome,
-#atacado__fase1__nome,
-#catalogo__fase1__nome {
-    width: 52.2vw;
-}
-
-#fase2,
-#vendedores,
-#catalogo__buttons {
-    margin: 1rem auto;
-    gap: 0.8rem;
-}
-
-#fase2__text {
-    color: var(--white);
-}
-
-.buttons {
-    background-color: var(--white);
-    width: 85vw;
-    height: 4.46rem;
-    align-items: center;
-    gap: 2.4vw;
-    border-radius: 0.8rem;
-    border: solid var(--green) .25rem;
-    padding: 0.875rem;
-    color: (var(--black));
-}
-
-.button__icons {
-    width: 12vw;
-}
-
-#catalogo__title,
-#vendedores__title {
-    color: var(--white);
-    text-align: center;
-}
-
-.orange__button {
-    border-color: var(--orange);
-}
-
-#catalogo__obs {
-    color: var(--white);
-    font-weight: 400;
-    font-size: 0.875rem;
-    align-self: flex-start;
-}
-
-#obs__link {
-    color: var(--white);
-    background-color: var(--orange);
-    padding: 0.25rem;
-    border-radius: 0.25rem;
-}
+</html>
